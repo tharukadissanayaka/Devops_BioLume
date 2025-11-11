@@ -1,3 +1,4 @@
+//Activity.jsx
 import React from 'react';
 
 const Activity = () => {
