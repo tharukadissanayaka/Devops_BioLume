@@ -7,26 +7,26 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>Health App</h2>
+        <h2>BioLume</h2>
       </div>
       <nav className="sidebar-nav">
-        <NavLink to="" end>
+        <NavLink to="/main" end className={({ isActive }) => (isActive ? 'active' : '')}>
           <FaHome />
           <span>Dashboard</span>
         </NavLink>
-        <NavLink to="sleep">
+        <NavLink to="/main/sleep" className={({ isActive }) => (isActive ? 'active' : '')}>
           <FaMoon />
           <span>Sleep Tracker</span>
         </NavLink>
-        <NavLink to="hydration">
+        <NavLink to="/main/hydration" className={({ isActive }) => (isActive ? 'active' : '')}>
           <FaWater />
           <span>Hydration</span>
         </NavLink>
-        <NavLink to="activity">
+        <NavLink to="/main/activity" className={({ isActive }) => (isActive ? 'active' : '')}>
           <FaSun />
           <span>Activity</span>
         </NavLink>
-        <NavLink to="settings">
+        <NavLink to="/main/settings" className={({ isActive }) => (isActive ? 'active' : '')}>
           <FaCog />
           <span>Settings</span>
         </NavLink>

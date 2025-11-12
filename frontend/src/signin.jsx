@@ -23,7 +23,11 @@ function SignIn() {
             await axios.post("http://localhost:3000/signin", formData);
             navigate('/main');
         } catch (error) {
-            alert(error)
+            if (error.response && error.response.status === 401) {
+                alert("Invalid username or password.");
+            } else {
+                alert("An error occurred during sign-in.");
+            }
         }
     };
 
