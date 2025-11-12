@@ -27,11 +27,11 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: tharukadissanayaka/biolume-backend:latest
+          tags: tharukadissanayake/biolume-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
           context: ./frontend
           push: true
-          tags: tharukadissanayaka/biolume-frontend:latest
+          tags: tharukadissanayake/biolume-frontend:latest
